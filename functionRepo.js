@@ -1,9 +1,11 @@
 function users(name, items) {
   // var newUser = Object.create(null);
-  var newUser = Object.create(functionRepo);
-  newUser.name = name;
-  newUser.items = items;
-  return newUser;
+  // var newUser = Object.create(functionRepo);
+  // newUser.name = name;
+  this.name = name;
+  // newUser.items = items;
+  this.items = items;
+  // return newUser;
 }
 
 var functionRepo = {
@@ -12,6 +14,6 @@ var functionRepo = {
   }
 };
 
-var user1 = users("John Doe", 2);
+var user1 = new users("John Doe", 2);
 console.log(user1);
-console.log(user1.increment());
+// console.log(user1.increment());
